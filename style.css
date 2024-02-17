@@ -1,0 +1,70 @@
+/* Resets */
+body {
+  margin: unset;
+  padding: unset;
+}
+
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+
+/* Components */
+body {
+  position: relative;
+  height: 100%;
+  font-family: "Single Day", Arial, sans-serif;
+  font-size: 14px;
+  background-image: url("./images/background01.png");
+  background-size: contain;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 400px;
+  height: 520px;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: #535050 1px 1px;
+}
+
+.myname {
+  color: rgb(249, 249, 255);
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-family: "Single Day";
+}
+
+.account {
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: whitesmoke;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.mongja {
+  color: rgb(198, 194, 194);
+}
+
+.ruru {
+  color: rgb(206, 150, 150);
+}
