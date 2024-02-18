@@ -12,7 +12,23 @@ let swiper = new Swiper(".mySwiper", {
   },
   loop: true,
   autoplay: {
-    delay: 1500,
+    delay: 2000,
     disableOnInteraction: false,
   },
 });
+
+const split = new SplitText("h3", { type: "chars" });
+
+swiper
+  .on("slideChangeTransitionStart", function () {
+    gsap.to(split.chars, {
+      yPercent: 120,
+      stagger: 0.05,
+    });
+  })
+  .on("slideChangeTransitionEnd", function () {
+    gsap.to(split.chars, {
+      yPercent: 0,
+      stagger: 0.05,
+    });
+  });
