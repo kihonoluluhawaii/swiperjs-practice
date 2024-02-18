@@ -28,28 +28,16 @@ body {
 }
 
 .heading h2 {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-}
-
-.heading h3 {
-  font-size: 3rem;
-  font-family: "Josefin Slab", serif;
-  overflow: hidden;
-}
-
-.heading h3 span {
+  color: rgb(6, 6, 6);
+  box-shadow: 1px 1px 10px;
   display: inline-block;
-  transform: translateY(190%) rotate(10deg);
-  transition: all 1s;
+  border-radius: 6px;
 }
 
-.heading h3.is-active span {
-  transform: translateY(0) rotate(0);
-  transition: all 0.5s;
-}
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -68,7 +56,6 @@ body {
   height: 500px;
   margin: 0 auto;
   border-radius: 20px;
-  /* box-shadow: #535050 1px 1px; */
 }
 
 .myname {
@@ -87,6 +74,13 @@ body {
   position: absolute;
   bottom: 40px;
   left: 20px;
+}
+
+.swiper-slide .insta-logo {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
 }
 
 .mongja {
